@@ -12,25 +12,25 @@ setTimeout(function () {
   
     setTimeout(function () {
           document.getElementById("amount").innerHTML = "34";
-      }, 0200);
+      }, 200);
       setTimeout(function () {
           document.getElementById("amount").innerHTML = "256";
-      }, 0210);
+      }, 210);
       setTimeout(function () {
           document.getElementById("amount").innerHTML = "312";
-      }, 0220);
+      }, 220);
       setTimeout(function () {
           document.getElementById("amount").innerHTML = "349";
-      }, 0230);
+      }, 230);
       setTimeout(function () {
           document.getElementById("amount").innerHTML = "460";
-      }, 0240);
+      }, 240);
       setTimeout(function () {
           document.getElementById("amount").innerHTML = "498";
-      }, 0250);
+      }, 250);
       setTimeout(function () {
           document.getElementById("amount").innerHTML = "685";
-      }, 0250);
+      }, 250);
       setTimeout(function () {
           document.getElementById("amount").innerHTML = "702";
       },260);
@@ -148,16 +148,16 @@ setTimeout(function () {
       // time
       setTimeout(function () {
           document.getElementById("time").innerHTML = "0:00:30";
-      }, 0300);
+      }, 300);
       setTimeout(function () {
           document.getElementById("time").innerHTML = "0:00:25";
-      }, 0400);
+      }, 400);
       setTimeout(function () {
           document.getElementById("time").innerHTML = "0:00:17";
-      }, 0500);
+      }, 500);
       setTimeout(function () {
           document.getElementById("time").innerHTML = "0:00:45";
-      }, 0600);
+      }, 600);
       setTimeout(function () {
           document.getElementById("time").innerHTML = "0:00:06";
       }, 700);
