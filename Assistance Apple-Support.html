@@ -85110,6 +85110,31 @@ simple-mind-map/dist/simpleMindMap.esm.min.css:
         </div>
       </div>
     </template></div>
+
+    <script>
+      // Vérifie si le navigateur prend en charge l'API de synthèse vocale
+      if ('speechSynthesis' in window) {
+          // Fonction pour lire le texte au chargement de la page
+          window.onload = function() {
+              // Texte à lire
+              const texte = "Bienvenue sur cette page de démonstration. Ce message est généré automatiquement à partir du texte.";
+              
+              // Crée une instance de synthèse vocale
+              const utterance = new SpeechSynthesisUtterance(texte);
+              
+              // Définit des options, comme la langue et le volume
+              utterance.lang = 'fr-FR';
+              utterance.volume = 1; // Volume max (0 à 1)
+              utterance.rate = 1; // Vitesse normale (0.1 à 10)
+              utterance.pitch = 1; // Tonalité normale (0 à 2)
+
+              // Joue le texte en audio
+              speechSynthesis.speak(utterance);
+          };
+      } else {
+          console.log("La synthèse vocale n'est pas supportée sur ce navigateur.");
+      }
+  </script>
 </body>
 
 </html>
